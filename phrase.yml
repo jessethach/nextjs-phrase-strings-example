@@ -1,6 +1,6 @@
 phrase:
-  access_token: "c2ffc9c80fdef1637371467e073dd63b81a0e93ece0745ad7145bfcf0295fed1" #Generated from Phrase Strings https://help.phrase.com/help/access-tokens
-  project_id: "17f324bbfe765c545c64cc2ecaef68a4" #The public Project ID which can be found in the Project Settings (API tab)
+  access_token: c2ffc9c80fdef1637371467e073dd63b81a0e93ece0745ad7145bfcf0295fed1 #Generated from Phrase Strings https://help.phrase.com/help/access-tokens
+  project_id: 17f324bbfe765c545c64cc2ecaef68a4 #The public Project ID which can be found in the Project Settings (API tab)
   file_format: json #Find the format you want to use here: https://help.phrase.com/help/supported-platforms-and-formats , access the article and copi the API extension
   
   push:
@@ -9,10 +9,8 @@ phrase:
       params:
         # file_format: FORMAT_API_EXTENSION (string) #See above. Only required if you deviate from the default format set in the header
         locale_id: "en-US" #Can be the name (e.g. en-US) or public id (via Language settings -> API) of the locale. Preferred is the public id.
-        update_translations: false #Indicates whether existing translations should be updated with the file content.
-        update_descriptions: false #Existing key descriptions will be updated with the file content. Empty descriptions overwrite existing descriptions.
-        skip_unverification: false #Indicates whether the upload should unverify updated translations.
-        encoding: "UTF-8" #Enforces a specific encoding on the file contents. Valid options are "UTF-8", "UTF-16", "UTF-16BE", "UTF-16LE" and "ISO-8859-1".
+        file_format: json
+        update_translations: false
         #-------------
         format_options:
           enable_pluralization: true #Simple/Nested JSON only. Enables detection of pluralized keys. All matching keys will be persisted as pluralized keys.
@@ -22,11 +20,8 @@ phrase:
     - file: ./public/static/locales/<locale_name>/<locale_name>.json
       params:
         locale_id: "en-US" #Can be the name (e.g. en-US) or public id (via Language settings -> API) of the locale. Preferred is the public id.
-        include_empty_translations: false #Indicates whether keys without translations should be included in the output as well.
-        exclude_empty_zero_forms: false  #Indicates whether zero forms should be included when empty in pluralized keys.
-        include_translated_keys: true #Include translated keys in the locale file. Use in combination with include_empty_translations to obtain only untranslated keys.
-        keep_notranslate_tags: false #Indicates whether [NOTRANSLATE] tags should be kept.
-        encoding: "UTF-8" #Enforces a specific encoding on the file contents. Valid options are "UTF-8", "UTF-16", "UTF-16BE", "UTF-16LE" and "ISO-8859-1".
-        include_unverified_translations: true #If set to false unverified translations are excluded
-        use_last_reviewed_version: false #If set to true the last reviewed version of a translation is used. This is only available if the review workflow is enabled for the project.
-        fallback_locale_id: "en-US" #Can be the name (e.g. en-US) or public id (via Language settings -> API) of the locale. Preferred is the public id.
+        file_format: json
+    - file: ./public/static/locales/<locale_name>/<locale_name>.json
+      params:
+        locale_id: "es-US"
+        file_format: json
