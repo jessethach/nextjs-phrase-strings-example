@@ -8,7 +8,7 @@ phrase:
     - file: ./public/static/locales/**/*.json #Provide the path to the file(s) you want to push here, starting from the location of the configuration file. You can use the placeholders <locale_name>, <locale_code> and <tags> in the path or file-name
       params:
         # file_format: FORMAT_API_EXTENSION (string) #See above. Only required if you deviate from the default format set in the header
-        locale_id: en-US #Can be the name (e.g. en-US) or public id (via Language settings -> API) of the locale. Preferred is the public id.
+        locale_id: "en-US" #Can be the name (e.g. en-US) or public id (via Language settings -> API) of the locale. Preferred is the public id.
         file_format: json
         update_translations: false
         #-------------
@@ -19,9 +19,9 @@ phrase:
     targets:
     - file: ./public/static/locales/<locale_name>/<locale_name>.json
       params:
-        locale_id: en-US #Can be the name (e.g. en-US) or public id (via Language settings -> API) of the locale. Preferred is the public id.
+        locale_id: "en-US" #Can be the name (e.g. en-US) or public id (via Language settings -> API) of the locale. Preferred is the public id.
         file_format: json
     - file: ./public/static/locales/<locale_name>/<locale_name>.json
       params:
-        locale_id: es-US
+        locale_id: "es-US"
         file_format: json
