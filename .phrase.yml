@@ -1,7 +1,7 @@
 phrase:
   access_token: c2ffc9c80fdef1637371467e073dd63b81a0e93ece0745ad7145bfcf0295fed1 #Generated from Phrase Strings https://help.phrase.com/help/access-tokens
   project_id: 17f324bbfe765c545c64cc2ecaef68a4 #The public Project ID which can be found in the Project Settings (API tab)
-  file_format: json #Find the format you want to use here: https://help.phrase.com/help/supported-platforms-and-formats , access the article and copi the API extension
+  file_format: i18next #Find the format you want to use here: https://help.phrase.com/help/supported-platforms-and-formats , access the article and copi the API extension
   
   push:
     sources:
@@ -9,7 +9,6 @@ phrase:
       params:
         # file_format: FORMAT_API_EXTENSION (string) #See above. Only required if you deviate from the default format set in the header
         locale_id: en-US #Can be the name (e.g. en-US) or public id (via Language settings -> API) of the locale. Preferred is the public id.
-        file_format: json
         update_translations: false
         #-------------
         format_options:
@@ -20,8 +19,6 @@ phrase:
     - file: ./public/static/locales/<locale_name>/<locale_name>.json
       params:
         locale_id: en-US #Can be the name (e.g. en-US) or public id (via Language settings -> API) of the locale. Preferred is the public id.
-        file_format: json
     - file: ./public/static/locales/<locale_name>/<locale_name>.json
       params:
         locale_id: es-US
-        file_format: json
