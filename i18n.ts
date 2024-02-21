@@ -13,17 +13,25 @@ export const resources = {
   'es-US': es_US,
 } as const
 
+export const namespaces: Readonly<Array<I18nNamespace>> = [
+  'auth',
+  'home',
+] as const
+
 i18n
+  .use(initReactI18next)
   .use(new PhraseInContextEditorPostProcessor({
     phraseEnabled: true,
     projectId: '17f324bbfe765c545c64cc2ecaef68a4',
     datacenter: 'us',
     useOldICE: false,
+    accountId: '363e9b7cebbe96b4369fba71f3dff700',
+    prefix: '{{__phrase_',
+    suffix: '__}}',
   }))
-  .use(initReactI18next)
   .init({
     fallbackLng: 'en-US',
-    ns: ['home', 'auth'],
+    ns: namespaces,
     defaultNS: 'home',
     debug: true,
     supportedLngs: ['en-US', 'es-US'],
