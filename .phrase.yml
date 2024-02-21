@@ -19,16 +19,16 @@ phrase:
     - file: ./public/static/locales/<locale_name>/home.json
       params:
         locale_id: en-US #Can be the name (e.g. en-US) or public id (via Language settings -> API) of the locale. Preferred is the public id.
-        file_format: i18next
+        file_format: nested_json
     - file: ./public/static/locales/<locale_name>/auth.json
       params:
         locale_id: en-US 
-        file_format: i18next
+        file_format: nested_json
     - file: ./public/static/locales/<locale_name>/home.json
       params:
         locale_id: es-US
-        file_format: i18next
+        file_format: nested_json
     - file: ./public/static/locales/<locale_name>/auth.json
       params:
         locale_id: es-US
-        file_format: i18next
+        file_format: nested_json
