@@ -1,0 +1,11 @@
+{
+    "alerts":{
+      "claim_exhausted":{
+        "header":"No money remaining",
+        "body":"You've collected the maximum amount. If you get new work and <whoIsEligible>become unemployed again</whoIsEligible>, you can reapply after this application expires on {{expirationDate, long_date}}.",
+        "footnote":"<strong>Note</strong>: If you are enrolled in Additional Benefits during Training (ABT) you may still have funds. Try <certifyLink>certifying online</certifyLink>."
+      }
+    },
+    "after_verify_heading":"After verifying your identity",
+    "how_to_get_your_payments_heading":"How to get your payments"
+  }

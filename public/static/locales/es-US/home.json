@@ -1,0 +1,11 @@
+{
+    "alerts":{
+      "claim_exhausted":{
+        "header":"No queda dinero",
+        "body":"Ha alcanzado la cantidad máxima. Si obtiene un nuevo trabajo y <whoIsEligible>vuelve a quedar desempleado</whoIsEligible>, puede volver a solicitar después de que esta solicitud expire el {{ expirationDate, long_date }}.",
+        "footnote":"<strong>Nota</strong>: Si está inscrito en Beneficios Adicionales durante Entrenamiento (ABT: Additional Benefits Training), es posible que aún tenga fondos. Intente <certifyLink>certificarse en línea</certifyLink>."
+      }
+    },
+    "after_verify_heading":"Después de verificar su identidad",
+    "how_to_get_your_payments_heading":"Cómo recibir sus pagos"
+  }
