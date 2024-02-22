@@ -1,6 +1,5 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import PhraseInContextEditorPostProcessor from 'i18next-phrase-in-context-editor-post-processor';
 
 import en_US from './public/static/locales/en-US'
 import es_US from './public/static/locales/es-US'
@@ -20,15 +19,6 @@ export const namespaces: Readonly<Array<I18nNamespace>> = [
 
 i18n
   .use(initReactI18next)
-  .use(new PhraseInContextEditorPostProcessor({
-    phraseEnabled: true,
-    projectId: '17f324bbfe765c545c64cc2ecaef68a4',
-    datacenter: 'us',
-    useOldICE: false,
-    accountId: '363e9b7cebbe96b4369fba71f3dff700',
-    prefix: '{{__phrase_',
-    suffix: '__}}',
-  }))
   .init({
     fallbackLng: 'en-US',
     ns: namespaces,
@@ -40,5 +30,4 @@ i18n
       escapeValue: false, // not needed for react as it escapes by default
     },
     resources,
-    postProcess: ['phraseInContextEditor']
   })
