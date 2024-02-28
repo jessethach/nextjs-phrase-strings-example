@@ -1,5 +1,5 @@
 phrase:
-  access_token: 9faea986c8cbffade460e96d214230ad49901e95e3082529793d276e31cc2212 #Generated from Phrase Strings https://help.phrase.com/help/access-tokens
+  access_token: 989221ac3c52f202e75da2ae575920a8b265f622051ea6604d43e6c0bfe5df45 #Generated from Phrase Strings https://help.phrase.com/help/access-tokens
   project_id: a781e0c1d96586383f02a7de011d5feb #The public Project ID which can be found in the Project Settings (API tab)
   file_format: i18next #Find the format you want to use here: https://help.phrase.com/help/supported-platforms-and-formats , access the article and copi the API extension
   
