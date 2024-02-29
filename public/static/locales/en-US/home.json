@@ -22,8 +22,4 @@
     "signin_button": "Sign in"
   },
   "start_over_button": "Comenzar de nuevo"
-  "continue_button_no_existing_application":"Continuar",
-  "continue_button_existing_application":"Finalizar aplicación",
-  "start_over_button":"Comenzar de nuevo",
-  "go_back_button":"Regresar"
 }
