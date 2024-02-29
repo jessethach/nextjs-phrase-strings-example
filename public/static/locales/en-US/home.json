@@ -17,6 +17,7 @@
     "signin_button": "Sign in"
   },
   "process_list_1_header": "Gather the required information",
+  "process_list_2_header": "Fill out the application and submit",
   "signin": {
     "error": "An error was encountered while signing in. Please try again.",
     "heading": "Sign in",
