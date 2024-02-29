@@ -7,6 +7,9 @@
       "header": "No queda dinero"
     }
   },
+  "continue_button_existing_application": "Finish application",
+  "continue_button_no_existing_application": "Continue",
+  "go_back_button": "Go back",
   "how_to_get_your_payments_heading": "Cómo recibir sus pagos",
   "logged_out": {
     "body": "Su trabajo se guardó antes de cerrar la sesión o antes de que la applicación se cerrara por inactividad. Inicia la sesión nuevamente para continuar donde dejaste.",
@@ -17,5 +20,6 @@
     "error": "Se ha producido un error al iniciar sesión. Por favor, inténtelo de nuevo.",
     "heading": "Iniciar sesión",
     "signin_button": "Iniciar sesión"
-  }
+  },
+  "start_over_button": "Start over"
 }

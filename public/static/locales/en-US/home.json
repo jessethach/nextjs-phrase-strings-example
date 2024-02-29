@@ -7,6 +7,9 @@
       "header": "No money remaining"
     }
   },
+  "continue_button_existing_application": "Finalizar aplicación",
+  "continue_button_no_existing_application": "Continuar",
+  "go_back_button": "Regresar",
   "how_to_get_your_payments_heading": "How to get your payments",
   "logged_out": {
     "body": "Your work was saved before you signed out or your application timed out. Sign back in to continue where you left off.",
@@ -17,5 +20,6 @@
     "error": "An error was encountered while signing in. Please try again.",
     "heading": "Sign in",
     "signin_button": "Sign in"
-  }
+  },
+  "start_over_button": "Comenzar de nuevo"
 }
