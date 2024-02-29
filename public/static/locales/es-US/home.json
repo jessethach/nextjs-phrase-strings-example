@@ -17,5 +17,9 @@
     "error": "Se ha producido un error al iniciar sesión. Por favor, inténtelo de nuevo.",
     "heading": "Iniciar sesión",
     "signin_button": "Iniciar sesión"
-  }
+  },
+  "continue_button_no_existing_application":"Continue",
+  "continue_button_existing_application":"Finish application",
+  "start_over_button":"Start over",
+  "go_back_button":"Go back"
 }

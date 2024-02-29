@@ -17,5 +17,9 @@
     "error": "An error was encountered while signing in. Please try again.",
     "heading": "Sign in",
     "signin_button": "Sign in"
-  }
+  },
+  "continue_button_no_existing_application":"Continuar",
+  "continue_button_existing_application":"Finalizar aplicación",
+  "start_over_button":"Comenzar de nuevo",
+  "go_back_button":"Regresar"
 }
