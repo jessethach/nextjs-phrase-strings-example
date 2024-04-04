@@ -11,5 +11,5 @@ jobs:
     
     - name: Prepare Phrase Configuration
       run: |
-        sed -i 's/PHRASE_ACCESS_TOKEN_PLACEHOLDER/${{ secrets.PHRASE_ACCESS_TOKEN }}/g' phrase.yml
-        sed -i 's/PHRASE_PROJECT_ID_PLACEHOLDER/${{ secrets.PHRASE_PROJECT_ID }}/g' phrase.yml
+        sed -i 's/PHRASE_ACCESS_TOKEN_PLACEHOLDER/${{ secrets.PHRASE_ACCESS_TOKEN }}/g' .phrase.yml
+        sed -i 's/PHRASE_PROJECT_ID_PLACEHOLDER/${{ secrets.PHRASE_PROJECT_ID }}/g' .phrase.yml
