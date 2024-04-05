@@ -1,6 +1,4 @@
 phrase:
-  access_token: PHRASE_ACCESS_TOKEN_PLACEHOLDER #Generated from Phrase Strings https://help.phrase.com/help/access-tokens
-  project_id: PHRASE_PROJECT_ID_PLACEHOLDER #The public Project ID which can be found in the Project Settings (API tab)
   file_format: i18next #Find the format you want to use here: https://help.phrase.com/help/supported-platforms-and-formats , access the article and copi the API extension
   
   push:
