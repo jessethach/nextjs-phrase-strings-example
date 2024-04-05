@@ -1,15 +1,27 @@
 name: Sync Translations
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main  # Adjust this to match your primary branch or any branches you want to trigger this workflow
+  pull_request:
+    branches:
+      - main  # Adjust this to match your primary branch
 
 jobs:
-  sync:
+  sync-translations:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
+    - name: Checkout Code
       uses: actions/checkout@v2
     
-    - name: Prepare Phrase Configuration
+    - name: Setup Phrase CLI
       run: |
-        sed -i 's/PHRASE_ACCESS_TOKEN_PLACEHOLDER/${{ secrets.PHRASE_ACCESS_TOKEN }}/g' .phrase.yml
-        sed -i 's/PHRASE_PROJECT_ID_PLACEHOLDER/${{ secrets.PHRASE_PROJECT_ID }}/g' .phrase.yml
+        curl -sL https://github.com/phrase/phrase-cli/releases/latest/download/phrase_linux_amd64.tar.gz | tar xz
+        sudo mv phrase_linux_amd64 /usr/local/bin/phrase
+
+    - name: Run Phrase Operations Script
+      run: ./scripts/phrase-operations.sh
+      env:
+        PHRASE_ACCESS_TOKEN: ${{ secrets.PHRASE_ACCESS_TOKEN }}
+        PHRASE_PROJECT_ID: ${{ secrets.PHRASE_PROJECT_ID }}
