@@ -20,7 +20,7 @@ jobs:
     - name: Run Phrase Operations
       run: |
         # Adjusted flag for access token
-        phrase push --access_token="${{ secrets.PHRASE_ACCESS_TOKEN }}" --project-id="${{ secrets.PHRASE_PROJECT_ID }}"
+        phrase push --access_token="${{ secrets.PHRASE_ACCESS_TOKEN }}" --project_id="${{ secrets.PHRASE_PROJECT_ID }}"
       env:
         PHRASE_ACCESS_TOKEN: ${{ secrets.PHRASE_ACCESS_TOKEN }}
         PHRASE_PROJECT_ID: ${{ secrets.PHRASE_PROJECT_ID }}
