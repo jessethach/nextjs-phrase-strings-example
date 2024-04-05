@@ -14,18 +14,16 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2
-      
-    - name: Setup Phrase CLI
+    
+    - name: Setup Phrase CLI (if not pre-installed)
       run: |
-        curl -sL https://github.com/phrase/phrase-cli/releases/latest/download/phrase_linux_amd64.tar.gz | tar xz
-        sudo mv phrase_linux_amd64 /usr/local/bin/phrase
+        # Add Phrase CLI setup commands here if the runner doesn't have Phrase CLI pre-installed
     
     - name: Make script executable
-      run: chmod +x scripts/phrase-operations.sh
+      run: chmod +x ./scripts/phrase-operations.sh
 
     - name: Run Phrase Operations Script
       run: ./scripts/phrase-operations.sh
       env:
         PHRASE_ACCESS_TOKEN: ${{ secrets.PHRASE_ACCESS_TOKEN }}
         PHRASE_PROJECT_ID: ${{ secrets.PHRASE_PROJECT_ID }}
-
