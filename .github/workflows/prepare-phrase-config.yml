@@ -1,29 +1,26 @@
-name: Sync Translations
+name: Sync Translations with Phrase CLI
 
 on:
   push:
     branches:
-      - main  # Adjust this to match your primary branch or any branches you want to trigger this workflow
+      - main  # Adjust based on your needs
   pull_request:
     branches:
-      - main  # Adjust this to match your primary branch
+      - main  # Adjust based on your needs
 
 jobs:
-  sync-translations:
+  phrase-operations:
     runs-on: ubuntu-latest
-    steps:
-    - name: Checkout Code
-      uses: actions/checkout@v2
-    
-    - name: Setup Phrase CLI (if not pre-installed)
-      run: |
-        # Add Phrase CLI setup commands here if the runner doesn't have Phrase CLI pre-installed
-    
-    - name: Make script executable
-      run: chmod +x ./scripts/phrase-operations.sh
+    container: phrase/phrase-cli:latest  # Use the Phrase CLI Docker image
 
-    - name: Run Phrase Operations Script
-      run: ./scripts/phrase-operations.sh
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run Phrase Operations
+      run: |
+        # Example: phrase push
+        phrase push --access-token="${{ secrets.PHRASE_ACCESS_TOKEN }}" --project-id="${{ secrets.PHRASE_PROJECT_ID }}"
       env:
         PHRASE_ACCESS_TOKEN: ${{ secrets.PHRASE_ACCESS_TOKEN }}
         PHRASE_PROJECT_ID: ${{ secrets.PHRASE_PROJECT_ID }}
